@@ -12,10 +12,18 @@
     <title>{% block title %}{% endblock %}</title>
   </head>
   <body>
+    {% block navbar %}
+      {% include 'parciais/_nav.html' %}
+    {% endblock %}
+
+    {% block header %}
+    {% endblock %}
+
     {% block content %}
       <h1>Hello, wsorsddld!</h1>
+    {% endblock %}
 
-
+    {% block footer %}
     {% endblock %}
     <!--java scripts-->
     {% bootstrap_javascript jquery='full' %}
